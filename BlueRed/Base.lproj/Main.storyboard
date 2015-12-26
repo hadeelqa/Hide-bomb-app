@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlueRed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-rf-oa6">
+                                <rect key="frame" x="102" y="410" width="171" height="47"/>
+                                <state key="normal" title="Hide Red bobm">
+                                    <color key="titleColor" red="1" green="0.18874150751159124" blue="0.24434950573969949" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RedAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ofv-Jx-h34"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-TV-rko">
+                                <rect key="frame" x="118" y="376" width="138" height="33"/>
+                                <state key="normal" title="Hide Blue Bomb"/>
+                                <connections>
+                                    <action selector="BlueAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfA-0r-1Ay"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="090629-blue-jelly-icon-signs-bomb" translatesAutoresizingMaskIntoConstraints="NO" id="fU7-Sg-juZ">
+                                <rect key="frame" x="25" y="201" width="336" height="156"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="095712-simple-red-glossy-icon-signs-bomb1" translatesAutoresizingMaskIntoConstraints="NO" id="7n5-cP-yui">
+                                <rect key="frame" x="51" y="482" width="294" height="155"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hide-The-Bomb" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-w1-kgG">
+                                <rect key="frame" x="32" y="28" width="311" height="165"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-Hm-JxG">
+                                <rect key="frame" x="159" y="455" width="56" height="30"/>
+                                <state key="normal" title="Show It!">
+                                    <color key="titleColor" red="0.060665246212121215" green="0.048422235184895579" blue="0.050537085166974867" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppV-nj-lun"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.89421632941814644" blue="0.084136007748031538" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BlueBomb" destination="fU7-Sg-juZ" id="FrM-bA-yr8"/>
+                        <outlet property="RedBomb" destination="7n5-cP-yui" id="hO7-Ih-7q8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="304.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="090629-blue-jelly-icon-signs-bomb" width="256" height="256"/>
+        <image name="095712-simple-red-glossy-icon-signs-bomb1" width="256" height="256"/>
+        <image name="Hide-The-Bomb" width="572" height="86"/>
+    </resources>
+</document>
